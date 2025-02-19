@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/css/login.css">
+</head>
+<body>
+<div class="container">
+    <h2>Đăng Nhập</h2>
+    <form id="formLogin">
+        <div class="form-group">
+            <label for="email">Email</label>
+            <input type="email" id="email" placeholder="Nhập email" required>
+        </div>
+
+        <div class="form-group">
+            <label for="password">Mật khẩu</label>
+            <div class="password-wrapper">
+                <input type="password" id="password" placeholder="Nhập mật khẩu" required>
+                <span class="toggle-password" onclick="togglePassword('password')">👁️</span>
+            </div>
+        </div>
+
+        <p class="error" id="alertError" style="display: none; color: red;">
+            Email hoặc mật khẩu không chính xác!
+        </p>
+
+        <button type="submit">Đăng Nhập</button>
+    </form>
+
+    <p>Chưa có tài khoản? <a href="register.html">Đăng ký ngay</a></p>
+</div>
+
+<script src="../js/login.js"></script>
+</body>
+</html>

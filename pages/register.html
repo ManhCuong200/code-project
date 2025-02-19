@@ -1,0 +1,58 @@
+    <!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Đăng ký tài khoản</title>
+    <link rel="stylesheet" href="/css/register.css">
+</head>
+<body>
+    <div class="container">
+        <h2>Đăng Ký</h2>
+        <form id="formRegister">
+            <div class="form-group">
+                <label for="userName">Tên người dùng</label>
+                <input type="text" id="userName" placeholder="Nhập tên người dùng">
+                <p class="error" id="userNameError">Vui lòng nhập tên người dùng</p>
+            </div>
+
+            <div class="form-group">
+                <label for="email">Email</label>
+                <input type="email" id="email" placeholder="Nhập email">
+                <p class="error" id="emailError">Vui lòng nhập email</p>
+            </div>
+
+            <div class="form-group">
+                <label for="password">Mật khẩu</label>
+                <div class="password-wrapper">
+                    <input type="password" id="password" placeholder="Nhập mật khẩu">
+                    <span class="toggle-password" onclick="togglePassword('password', 'togglePasswordIcon1')">
+                        👁️
+                    </span>
+                </div>
+                <p class="error" id="passwordError">Vui lòng nhập mật khẩu</p>
+            </div>
+
+            <div class="form-group">
+                <label for="rePassword">Nhập lại mật khẩu</label>
+                <div class="password-wrapper">
+                    <input type="password" id="rePassword" placeholder="Nhập lại mật khẩu">
+                    <span class="toggle-password" onclick="togglePassword('rePassword', 'togglePasswordIcon2')">
+                        👁️
+                    </span>
+                </div>
+                <p class="error" id="rePasswordError">Vui lòng nhập lại mật khẩu</p>
+            </div>
+
+            <button type="submit">Đăng Ký</button>
+        </form>
+
+        <p>Đã có tài khoản? <a href="login.html">Đăng nhập</a></p>
+    </div>
+
+    <script src="../js/register.js"></script>
+</body>
+</html>
+
+</body>
+</html>
